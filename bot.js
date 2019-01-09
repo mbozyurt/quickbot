@@ -8,21 +8,20 @@ client.on('ready', () => {
   console.log(`Sunucumuza ${client.user.tag} giriş yaptı!`);
 });
 client.on('message', msg => {
-  if (msg.content === 'selam') {
-    msg.channel.sendMessage('Selamlar!');
+  if (msg.content === '!komutlar') {
+    msg.channel.sendMessage('Sadece tek bir komutum var :( - !abdest ');
   }
   if (!msg.content.startsWith(prefix)) {
     return;
 }
 if (msg.content.toLowerCase() === prefix + 'abdest') {
-  msg.reply('https://quickabdest.com/')
+  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyacı var o zaman: https://quickabdest.com/')
 }
-if (msg.content.toLowerCase() === prefix + 'ig') {
-  msg.reply('https://instagram.com/mehmetberkozyurt')
-}
-if (msg.content.toLowerCase() === prefix + 'sc') {
-  msg.reply ('https://soundcloud.com/mehmetberkozyurt')
-}
+});
+
+client.on('ready', () => {
+    client.user.setStatus('away')
+    client.user.setGame('quickabdest.com')
 });
 
 client.login('NTI1NDYxMDMwMzI3ODEyMTEx.Dv2-Qg.L_9vzQ6TSnIGkH54R447IP13XTA');
