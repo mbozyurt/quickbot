@@ -24,4 +24,4 @@ client.on('ready', () => {
     client.user.setGame('quickabdest.com')
 });
 
-client.login('NTI1NDYxMDMwMzI3ODEyMTEx.Dv2-Qg.L_9vzQ6TSnIGkH54R447IP13XTA');
+client.login(process.env.BOT_TOKEN);
