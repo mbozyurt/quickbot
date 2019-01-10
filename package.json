@@ -1,12 +1,23 @@
 {
-  "name": "quickbot",
-  "description": "quickabdestcombot,
-  "version": "0.0.0",
+  "name": "quickabdestbot",
+  "version": "0.0.1",
+  "description": "A bot for Discord",
+  "readme": "README.md",
+  "author": "Mbpavilion",
+  "keywords": [
+    "discord",
+    "bot",
+    "discordapp"
+  ],
+  "license": "MIT",
   "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-   },
+  "directories": {
+    "lib": "./lib"
+  },
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
+    "discord.js": "*",
+    "youtube-node": "1.2.x",
+    "query-string": "3.*",
+    "request": ">=2.58.0"
   }
+}
