@@ -23,4 +23,4 @@ client.on('ready', () => {
 client.user.setActivity('quickabdest', { type: 'watching' });
 });
 
-client.login('BOT_TOKEN');
+client.login(process.env.BOT_TOKEN);
