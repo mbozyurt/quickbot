@@ -5,7 +5,7 @@ const ayarlar = require('./ayarlar.json');
 var prefix = ayarlar.prefix;
 
 client.on('ready', () => {
-  console.log(`Sunucumuza ${client.user.tag} giri� yapt�!`);
+  console.log(`Sunucumuza ${client.user.tag} giriş yaptı!`);
 });
 client.on('message', msg => {
   if (msg.content === '!komutlar') {
@@ -15,7 +15,7 @@ client.on('message', msg => {
     return;
 }
 if (msg.content.toLowerCase() === prefix + 'abdest') {
-  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyac� var o zaman: https://quickabdest.com/')
+  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyacı var o zaman: https://quickabdest.com/')
 }
 });
 
