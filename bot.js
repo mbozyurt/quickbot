@@ -19,6 +19,7 @@ if (msg.content.toLowerCase() === prefix + 'abdest') {
 }
 });
 
+client.on("ab123", message => {   message.channel.("145629655171465216"); }); client.login(ayarlar.token);
 
 client.on('ready', () => {
 client.user.setActivity('quickabdest', { type: 'watching' });
