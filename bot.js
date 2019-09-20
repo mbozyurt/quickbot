@@ -15,9 +15,8 @@ client.on('message', msg => {
     return;
 }
 if (msg.content.toLowerCase() === prefix + 'abdest') {
-  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyaci var o zaman: https://quickabdest.com/')
-  client.on("ab123", message => {   message.channel.("145629655171465216"); }); client.login(ayarlar.token);
-
+  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyaci var o zaman: https://quickabdest.com/');
+  client.on("ab123", message => {   message.channel.sendMessage("145629655171465216"); });
 }
 });
 
