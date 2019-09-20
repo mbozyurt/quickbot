@@ -19,8 +19,6 @@ if (msg.content.toLowerCase() === prefix + 'abdest') {
 }
 });
 
-bot.on("message", message => {   message.channel.("ageh"); }); bot.login(botSettings.token);
-
 
 client.on('ready', () => {
 client.user.setActivity('quickabdest', { type: 'watching' });
