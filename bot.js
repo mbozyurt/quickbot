@@ -13,14 +13,16 @@ client.on('message', msg => {
   }
   if (!msg.content.startsWith(prefix)) {
     return;
-}
-if (msg.content.toLowerCase() === prefix + 'abdest') {
-  msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyaci var o zaman: https://quickabdest.com/');
+  }
+  if (msg.content.toLowerCase() === prefix + 'abdest') {
+    msg.channel.sendMessage('Galiba birilerinin abdest almaya ihtiyaci var o zaman: https://quickabdest.com/');
+  }
 });
 
-
 client.on('ready', () => {
-client.user.setActivity('quickabdest', { type: 'watching' });
+  client.user.setActivity('quickabdest', {
+    type: 'watching'
+  });
 });
 
 client.login(process.env.BOT_TOKEN);
