@@ -9,7 +9,7 @@ client.on('message', msg => {
   if (msg.content.startsWith(prefix + "komutlar")) {
     msg.channel.send('Sadece tek bir komutum var :( - !abdest ');
   } else
-  if (msg.content.startsWith(prefix + "abdest") && msg.content.channel.id === "799676922183286805") {
+  if (msg.content.startsWith(prefix + "abdest")) {
     msg.channel.send('Galiba birilerinin abdest almaya ihtiyaci var o zaman: https://quickabdest.com/');
   }
 });
