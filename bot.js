@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
-const ayarlar = require('./ayarlar.json');
+const settings = require('./settings.json');
 
-var prefix = ayarlar.prefix;
+var prefix = settings.prefix;
 
 client.on('ready', () => {
   console.log(`Sunucumuza ${client.user.tag} giris yapti!`);
