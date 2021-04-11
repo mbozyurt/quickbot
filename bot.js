@@ -1,12 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const settings = require('./settings.json');
 
-var prefix = settings.prefix;
+const prefix = "!";
 
-client.on('ready', () => {
-  console.log(`Sunucumuza ${client.user.tag} giris yapti!`);
-});
 client.on('message', msg => {
   if (!msg.content.startsWith(prefix)) return;
 
@@ -18,10 +14,9 @@ client.on('message', msg => {
   }
 });
 
-client.on('ready', () => {
-  client.user.setActivity('quickabdest', {
-    type: 'watching'
-  });
+client.on("ready", () => {
+  console.log("Ready");
+  client.user.setActivity("!abdest");
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("NTI1NDYxMDMwMzI3ODEyMTEx.XBwruA.LuH5m9V1MSiVutep7UF1hl59BMA");
