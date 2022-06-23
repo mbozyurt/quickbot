@@ -19,4 +19,4 @@ client.on("ready", () => {
   client.user.setActivity("!abdest");
 });
 
-client.login("NTI1NDYxMDMwMzI3ODEyMTEx.XBwruA.6nsUpEcG1X_Q9jEaSnv7rHWrXDA");
+client.login("NNTI1NDYxMDMwMzI3ODEyMTEx.GkIH0w.8w8GGec4WQLM_cY4sSEaT0FepG_NSe7RnA6GPQ");
