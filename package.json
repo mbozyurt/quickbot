@@ -1,23 +1,24 @@
 {
-  "name": "quickabdestbot",
-  "version": "0.0.1",
-  "description": "A bot for Discord",
-  "readme": "README.md",
-  "author": "pavi",
-  "keywords": [
-    "discord",
-    "bot",
-    "discordapp"
-  ],
-  "license": "MIT",
-  "main": "bot.js",
-  "directories": {
-    "lib": "./lib"
+  "name": "quickbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbpaviIion/quickbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbpaviIion/quickbot/issues"
+  },
+  "homepage": "https://github.com/mbpaviIion/quickbot#readme",
   "dependencies": {
-    "discord.js": "*",
-    "youtube-node": "1.2.x",
-    "query-string": "3.*",
-    "request": ">=2.58.0"
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "index.js": "^0.0.3"
   }
 }
