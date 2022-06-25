@@ -35,7 +35,7 @@ client.loadButtons(bot, false)
 
 module.exports = bot
 
-client.user.setActivity("", {
+client.user.setActivity("izliyor", {
     type: "STREAMING",
     url: "https://quickabdest.com"
   });
