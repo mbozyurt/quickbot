@@ -35,9 +35,4 @@ client.loadButtons(bot, false)
 
 module.exports = bot
 
-client.user.setActivity("izliyor", {
-    type: "STREAMING",
-    url: "https://quickabdest.com"
-  });
-
 client.login(process.env.TOKEN)
