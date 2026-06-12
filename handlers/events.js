@@ -5,7 +5,7 @@ module.exports = (bot, reload) => {
 
     let events = getFiles("./events/", ".js")
 
-    if(events.legnth === 0) {
+    if(events.length === 0) {
         console.log("no events to load")
     }
 
@@ -41,9 +41,14 @@ function initEvents(bot) {
 
     client.on("ready", () => {
         triggerEventHandler(bot, "ready")
+        client.user.setActivity("!abdest")
     })
 
     client.on("messageCreate", (message) => {
         triggerEventHandler(bot, "messageCreate", message)
+    })
+
+    client.on("interactionCreate", (interaction) => {
+        triggerEventHandler(bot, "interactionCreate", interaction)
     })
 }

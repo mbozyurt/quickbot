@@ -9,7 +9,7 @@ module.exports = (bot, reload) => {
 
 	let slashcommands = getFiles("./slashcommands/", ".js")
 
-	if (slashcommands.legnth === 0) {
+	if (slashcommands.length === 0) {
 		console.log("No events to load")
 	}
 

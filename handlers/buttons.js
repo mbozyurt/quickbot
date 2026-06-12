@@ -9,7 +9,7 @@ module.exports = (bot, reload) => {
 
 	let buttons = getFiles("./buttons/", ".js")
 
-	if (buttons.legnth === 0) {
+	if (buttons.length === 0) {
 		console.log("No buttons to load")
 	}
 

@@ -4,7 +4,7 @@ require("dotenv").config();
 // const generateImage = require("./generateImage")
 
 const client = new Discord.Client({
-  intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS"],
+  intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "MESSAGE_CONTENT"],
 });
 
 let bot = {
@@ -32,7 +32,4 @@ client.loadSlashCommands(bot, false);
 client.loadButtons(bot, false);
 
 module.exports = bot;
-client.on("ready", () => {
-  client.user.setActivity("!abdest");
-});
 client.login(process.env.TOKEN);
